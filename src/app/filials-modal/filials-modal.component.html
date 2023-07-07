@@ -6,6 +6,6 @@
 
   <h4>All filials:</h4>
   <ul>
-    <filial *ngFor="let item of filials" (click)="onFilialClick(item)" [filial]="item">{{item.name}}</filial>
+    <filial *ngFor="let item of filials" [onFilialClick]="onFilialClick" [filial]="item"></filial>
   </ul>
 </div>

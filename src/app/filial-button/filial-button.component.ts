@@ -7,5 +7,6 @@ import { Filial } from '../types';
   styleUrls: ['./filial-button.component.css'],
 })
 export class FilialButtonComponent {
-  @Input() onClick: () => void;
+  @Input() filial: Filial;
+  @Input() onFilialClick: (filial: Filial) => void;
 }

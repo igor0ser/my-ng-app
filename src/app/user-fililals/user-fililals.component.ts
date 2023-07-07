@@ -32,7 +32,7 @@ export class UserFililalsComponent {
 
   selectedFilials: Array<Filial> = [this.filials[3], this.filials[4]];
 
-  onFilialClick(filial: Filial) {
+  onFilialClick = (filial: Filial) => {
     if (this.selectedFilials.includes(filial)) {
       this.selectedFilials = this.selectedFilials.filter(
         (item) => item !== filial
@@ -40,5 +40,5 @@ export class UserFililalsComponent {
     } else {
       this.selectedFilials = [...this.selectedFilials, filial];
     }
-  }
+  };
 }

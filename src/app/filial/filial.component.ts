@@ -8,5 +8,5 @@ import { Filial } from '../types';
 })
 export class FilialComponent {
   @Input() filial: Filial;
-  @Input() onClick: () => void;
+  @Input() onFilialClick: (filial: Filial) => void;
 }
