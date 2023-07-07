@@ -1,0 +1,3 @@
+.selected-filial:not(:last-child)::after {
+  content: ', ';
+}

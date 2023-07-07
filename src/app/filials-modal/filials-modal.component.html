@@ -1,0 +1,11 @@
+<div>
+  <h4>Selected filials:</h4>
+  <div>
+    <span *ngFor="let item of selectedFilials" class="selected-filial">{{item.name}}</span>
+  </div>
+
+  <h4>All filials:</h4>
+  <ul>
+    <filial *ngFor="let item of filials" (click)="onFilialClick(item)" [filial]="item">{{item.name}}</filial>
+  </ul>
+</div>
